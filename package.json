@@ -1,0 +1,22 @@
+{
+  "name": "chartjs-lines-plugin",
+  "version": "1.0.0",
+  "description": "Enables a simple API to add horizontal or vertical lines to ChartJS 2.0 graphs",
+  "main": "dist/chartjs-lines-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KerryRitter/chartjs-horizonal-line-plugin.git"
+  },
+  "keywords": [
+    "chartjs"
+  ],
+  "author": "Kerry Ritter, l-bahr@stackoverflow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KerryRitter/chartjs-horizonal-line-plugin/issues"
+  },
+  "homepage": "https://github.com/KerryRitter/chartjs-horizonal-line-plugin#readme"
+}
