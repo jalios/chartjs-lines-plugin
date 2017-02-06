@@ -28,7 +28,7 @@ Chart.pluginService.register({
 
                 if (yValue) {
                     ctx.beginPath();
-                    ctx.moveTo(30, yValue);
+                    ctx.moveTo(60, yValue);
                     ctx.lineTo(canvas.width, yValue);
                     ctx.strokeStyle = style;
                     ctx.stroke();
@@ -74,8 +74,8 @@ Chart.pluginService.register({
 
                 if (xValue) {
                     ctx.beginPath();
-                    ctx.moveTo(xValue, 32);
-                    ctx.lineTo(xValue, canvas.height-50);
+                    ctx.moveTo(xValue,39);
+                    ctx.lineTo(xValue, canvas.height-45);
                     ctx.strokeStyle = style;
                     ctx.stroke();
                 }
