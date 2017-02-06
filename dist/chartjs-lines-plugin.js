@@ -74,8 +74,8 @@ Chart.pluginService.register({
 
                 if (xValue) {
                     ctx.beginPath();
-                    ctx.moveTo(xValue, 30);
-                    ctx.lineTo(xValue, canvas.width);
+                    ctx.moveTo(xValue, 32);
+                    ctx.lineTo(xValue, canvas.height-50);
                     ctx.strokeStyle = style;
                     ctx.stroke();
                 }
