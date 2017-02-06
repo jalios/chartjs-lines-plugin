@@ -1,6 +1,6 @@
 {
   "name": "chartjs-lines-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Enables a simple API to add horizontal or vertical lines to ChartJS 2.0 graphs",
   "main": "dist/chartjs-lines-plugin.js",
   "scripts": {
