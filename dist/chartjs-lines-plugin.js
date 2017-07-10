@@ -24,19 +24,19 @@ Chart.pluginService.register({
                     yValue = 0;
                 }
 
-                ctx.lineWidth = 3;
+                ctx.lineWidth = 2;
 
                 if (yValue) {
                     ctx.beginPath();
-                    ctx.moveTo(60, yValue);
-                    ctx.lineTo(canvas.width, yValue);
+                    ctx.moveTo(chartInstance.chartArea.left, yValue);
+                    ctx.lineTo(chartInstance.chartArea.right, yValue);
                     ctx.strokeStyle = style;
                     ctx.stroke();
                 }
 
                 if (line.text) {
                     ctx.fillStyle = style;
-                    ctx.fillText(line.text, 0, yValue + ctx.lineWidth);
+                    ctx.fillText(line.text,chartInstance.chartArea.right - ctx.measureText(line.text).width -5 , yValue + ctx.lineWidth);
                 }
             }
             return;
@@ -70,19 +70,19 @@ Chart.pluginService.register({
                     xValue = 0;
                 }
 
-                ctx.lineWidth = 3;
+                ctx.lineWidth = 2;
 
                 if (xValue) {
                     ctx.beginPath();
-                    ctx.moveTo(xValue,39);
-                    ctx.lineTo(xValue, canvas.height-45);
+                    ctx.moveTo(xValue,chartInstance.chartArea.top);
+                    ctx.lineTo(xValue, chartInstance.chartArea.bottom);
                     ctx.strokeStyle = style;
                     ctx.stroke();
                 }
 
                 if (line.text) {
                     ctx.fillStyle = style;
-                    ctx.fillText(line.text, xValue + ctx.lineWidth, 0);
+                    ctx.fillText(line.text, xValue + ctx.lineWidth, chartInstance.chartArea.top - ctx.lineWidth -10);
                 }
             }
             return;
